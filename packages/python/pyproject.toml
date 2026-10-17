@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apify-google-trends"
+version = "0.1.0"
+description = "Google Trends data without the API: interest over time, interest by region, related and rising queries, keyword comparisons and Trending Now for any country."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["apify-client>=1.8"]
+keywords = ["google-trends", "google-trends-api", "trends", "seo", "keyword-research", "langchain", "llamaindex", "n8n"]
+
+[project.urls]
+Homepage = "https://github.com/3torix3/google-trends-api"
+"Apify Store" = "https://apify.com/murch1k/google-trends-scraper"

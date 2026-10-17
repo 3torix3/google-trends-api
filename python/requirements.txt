@@ -1,0 +1,3 @@
+apify-client>=1.8
+langchain-apify>=0.1
+llama-index-readers-apify>=0.3

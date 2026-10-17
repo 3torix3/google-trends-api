@@ -1,0 +1,32 @@
+{
+  "name": "apify-google-trends",
+  "version": "0.1.0",
+  "description": "Google Trends data without the API: interest over time, interest by region, related and rising queries, keyword comparisons and Trending Now for any country.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "google-trends",
+    "google-trends-api",
+    "trends",
+    "seo",
+    "keyword-research",
+    "langchain",
+    "llamaindex",
+    "n8n",
+    "apify"
+  ],
+  "dependencies": {
+    "apify-client": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3torix3/google-trends-api.git"
+  },
+  "homepage": "https://apify.com/murch1k/google-trends-scraper",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
+}

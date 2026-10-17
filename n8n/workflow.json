@@ -1,0 +1,50 @@
+{
+  "name": "google-trends-api via Apify",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/murch1k~google-trends-scraper/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"searchTerms\": [\"pickleball\", \"coffee, tea\"], \"geo\": \"\", \"timeRange\": \"today 12-m\", \"property\": \"web\"}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "name": "Run Apify actor",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Credential: Header Auth, name \"Authorization\", value \"Bearer <APIFY_TOKEN>\""
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Run Apify actor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
