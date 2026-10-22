@@ -7,7 +7,7 @@ from llama_index.readers.apify import ApifyActor
 
 reader = ApifyActor(os.environ["APIFY_TOKEN"])
 docs = reader.load_data(
-    actor_id="murch1k/google-trends-scraper",
+    actor_id="torix33/google-trends-scraper",
     run_input={'searchTerms': ['pickleball', 'coffee, tea'], 'geo': '', 'timeRange': 'today 12-m', 'property': 'web'},
     dataset_mapping_function=lambda item: Document(
         text=json.dumps(item.get("relatedQueries") or {}),

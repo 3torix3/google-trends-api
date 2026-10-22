@@ -1,7 +1,7 @@
-// Thin client for the Apify actor murch1k/google-trends-scraper.
+// Thin client for the Apify actor torix33/google-trends-scraper.
 import { ApifyClient } from 'apify-client';
 
-export const ACTOR_ID = 'murch1k/google-trends-scraper';
+export const ACTOR_ID = 'torix33/google-trends-scraper';
 
 /** Run the actor and return its dataset rows. token defaults to process.env.APIFY_TOKEN. */
 export async function getTrends(input, { token = process.env.APIFY_TOKEN, maxTotalChargeUsd } = {}) {

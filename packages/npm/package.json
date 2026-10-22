@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/3torix3/google-trends-api.git"
   },
-  "homepage": "https://apify.com/murch1k/google-trends-scraper",
+  "homepage": "https://apify.com/torix33/google-trends-scraper",
   "files": [
     "index.js",
     "index.d.ts"

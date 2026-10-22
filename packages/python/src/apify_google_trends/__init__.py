@@ -1,10 +1,10 @@
-"""Thin client for the Apify actor murch1k/google-trends-scraper."""
+"""Thin client for the Apify actor torix33/google-trends-scraper."""
 import os
 from typing import Any, Dict, List, Optional
 
 from apify_client import ApifyClient
 
-ACTOR_ID = "murch1k/google-trends-scraper"
+ACTOR_ID = "torix33/google-trends-scraper"
 __version__ = "0.1.0"
 
 

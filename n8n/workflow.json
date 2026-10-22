@@ -14,7 +14,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.apify.com/v2/acts/murch1k~google-trends-scraper/run-sync-get-dataset-items",
+        "url": "https://api.apify.com/v2/acts/torix33~google-trends-scraper/run-sync-get-dataset-items",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,

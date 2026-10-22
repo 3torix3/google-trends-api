@@ -2,7 +2,7 @@
 
 Google Trends data without the API: interest over time, interest by region, related and rising queries, keyword comparisons and Trending Now for any country.
 
-Runs on the Apify actor **[murch1k/google-trends-scraper](https://apify.com/murch1k/google-trends-scraper)** — pay per result, no subscription. This repo has copy-paste
+Runs on the Apify actor **[torix33/google-trends-scraper](https://apify.com/torix33/google-trends-scraper)** — pay per result, no subscription. This repo has copy-paste
 examples for Python, JavaScript, LangChain, LlamaIndex, n8n.
 
 ## Numbers (measured 2026-10-15)
@@ -24,7 +24,7 @@ cd js && npm install && node example.mjs
 ```python
 from apify_client import ApifyClient
 client = ApifyClient("<APIFY_TOKEN>")
-run = client.actor("murch1k/google-trends-scraper").call(run_input={'searchTerms': ['pickleball', 'coffee, tea'], 'geo': '', 'timeRange': 'today 12-m', 'property': 'web'})
+run = client.actor("torix33/google-trends-scraper").call(run_input={'searchTerms': ['pickleball', 'coffee, tea'], 'geo': '', 'timeRange': 'today 12-m', 'property': 'web'})
 rows = list(client.dataset(run["defaultDatasetId"]).iterate_items())
 ```
 

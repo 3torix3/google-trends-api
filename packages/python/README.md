@@ -7,4 +7,4 @@ from apify_google_trends import get_trends
 rows = get_trends({'searchTerms': ['pickleball', 'coffee, tea'], 'geo': '', 'timeRange': 'today 12-m', 'property': 'web'}, token="<APIFY_TOKEN>")
 ```
 
-Runs [murch1k/google-trends-scraper](https://apify.com/murch1k/google-trends-scraper) on your Apify account.
+Runs [torix33/google-trends-scraper](https://apify.com/torix33/google-trends-scraper) on your Apify account.
